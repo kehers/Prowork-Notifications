@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	name="prowork_blue">#3C4C74</color>
+    <color
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	name="text">#444444</color>
+    <color
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	name="splash_hdr_text">#162844</color>
+    <color
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	name="green_start">#A4CC5F</color>
+    <color
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	name="green_end">#88AE48</color>
+    <color
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	name="white">#ffffff</color>
+    <color
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	name="black">#000000</color>    
+    <color
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	name="link">#879BC1</color>        
+    <color
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	name="link_hover">#cecece</color>
+</resources>

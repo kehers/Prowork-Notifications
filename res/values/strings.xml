@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Prowork Notifications</string>
+    
+	<string name="login">Login</string>
+	<string name="logout">Logout</string>
+	
+	<string name="email">Email</string>
+	<string name="password">Password</string>
+	
+	<string name="recover"><u>Recover Password</u></string>
+	<string name="sign_up"><u>Sign Up</u></string>
+	<string name="dot">.</string>
+	
+	<string name="logged_in_as">Logged in as</string>
+	
+	<string name="internal_error">An internal error has occured. Please try again later.</string>
+	<string name="login_wait">Authenticating. Please wait...</string>
+	<string name="notification_alert">You are successfully logged in. You will now receive status notifications.</string>
+	<string name="unsupported_alert">Sorry, your device is not supported.</string>
+	
+</resources>
