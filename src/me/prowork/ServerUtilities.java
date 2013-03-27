@@ -165,14 +165,22 @@ public final class ServerUtilities {
             out.write(bytes);
             out.close();
 
-            InputStream is = conn.getInputStream();
-            BufferedReader rd = new BufferedReader(new InputStreamReader(is));
-            String line;
-            StringBuffer response = new StringBuffer(); 
-            while((line = rd.readLine()) != null) {
-              response.append(line);
+            StringBuffer response = new StringBuffer();
+			InputStream is = null;
+            try {
+	            is = conn.getInputStream();
             }
-            rd.close();
+            catch (IOException e) {
+            	//e.printStackTrace();
+				// Hack for 4xx http headers
+	            is = conn.getErrorStream();
+			}
+			BufferedReader rd = new BufferedReader(new InputStreamReader(is));
+			String line;
+			while((line = rd.readLine()) != null) {
+			  response.append(line);
+			}
+			rd.close();	
             
             int status = conn.getResponseCode();
             //Log.d("URL", status+" "+response.toString());
